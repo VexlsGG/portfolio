@@ -1,24 +1,16 @@
-# portfolio
+# React + Vite
 
-Task: Generate a modern, professional, multi-page React portfolio website.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Requirements:
-	•	Pages: Home, About Me, Achievements, Resume, Contact, “What’s in My Bag”, Skills/Languages. Each page should be separate, not a single-page scroll.
-	•	Navbar: Sticky top navbar with links to each page. Smooth transitions between pages. Mobile-responsive.
-	•	Home Page: Big hero section with my picture, name, tagline. Include a call-to-action button to go to About Me.
-	•	About Me Page: Brief bio, profile picture, some personal info.
-	•	Achievements Page: Showcase accomplishments, awards, projects, etc., in a clean card/grid layout.
-	•	Resume Page: Display resume (PDF embed or styled HTML version). Include download button.
-	•	Contact Page: Form with name, email, message, submit button (doesn’t need backend integration, just frontend mock).
-	•	What’s in My Bag Page: Grid/list of daily items I use (e.g., laptop, headphones, notebook, etc.) with small pictures and descriptions.
-	•	Skills/Languages Page: Icons or badges for programming languages and technologies I know.
-	•	Design: Modern React with React Router for navigation. Clean, minimal but visually striking. Use CSS modules or styled-components. Hover effects, smooth animations, subtle shadows, gradient highlights.
-	•	Extras: Responsive design, mobile-friendly, professional fonts, easy to customize colors and images.
-	•	Tech stack: React (create-react-app or Vite), React Router, functional components with hooks.
-	•	Output: Entire project structure ready to run locally with npm start or yarn start. Include placeholder images and placeholder text where needed.
+Currently, two official plugins are available:
 
-Additional Notes:
-	•	Make the design visually appealing, not cluttered.
-	•	Each page should feel distinct but cohesive.
-	•	Ensure the navbar highlights the active page.
-	•	Include subtle transitions/animations for a “wow” factor.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
