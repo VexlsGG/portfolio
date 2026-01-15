@@ -1,24 +1,113 @@
-# portfolio
+# Modern Multi-Page React Portfolio Website
 
-Task: Generate a modern, professional, multi-page React portfolio website.
+A professional, responsive portfolio website built with React, Vite, and React Router. Features smooth animations, modern design, and a clean multi-page architecture.
 
-Requirements:
-	•	Pages: Home, About Me, Achievements, Resume, Contact, “What’s in My Bag”, Skills/Languages. Each page should be separate, not a single-page scroll.
-	•	Navbar: Sticky top navbar with links to each page. Smooth transitions between pages. Mobile-responsive.
-	•	Home Page: Big hero section with my picture, name, tagline. Include a call-to-action button to go to About Me.
-	•	About Me Page: Brief bio, profile picture, some personal info.
-	•	Achievements Page: Showcase accomplishments, awards, projects, etc., in a clean card/grid layout.
-	•	Resume Page: Display resume (PDF embed or styled HTML version). Include download button.
-	•	Contact Page: Form with name, email, message, submit button (doesn’t need backend integration, just frontend mock).
-	•	What’s in My Bag Page: Grid/list of daily items I use (e.g., laptop, headphones, notebook, etc.) with small pictures and descriptions.
-	•	Skills/Languages Page: Icons or badges for programming languages and technologies I know.
-	•	Design: Modern React with React Router for navigation. Clean, minimal but visually striking. Use CSS modules or styled-components. Hover effects, smooth animations, subtle shadows, gradient highlights.
-	•	Extras: Responsive design, mobile-friendly, professional fonts, easy to customize colors and images.
-	•	Tech stack: React (create-react-app or Vite), React Router, functional components with hooks.
-	•	Output: Entire project structure ready to run locally with npm start or yarn start. Include placeholder images and placeholder text where needed.
+## Features
 
-Additional Notes:
-	•	Make the design visually appealing, not cluttered.
-	•	Each page should feel distinct but cohesive.
-	•	Ensure the navbar highlights the active page.
-	•	Include subtle transitions/animations for a “wow” factor.
+- 🏠 **Home Page** - Hero section with animated profile and call-to-action
+- 👤 **About Me** - Personal bio with education, experience, and location cards
+- 🏆 **Achievements** - Showcase of accomplishments in a beautiful card layout
+- 📄 **Resume** - Professional resume with download functionality
+- 💼 **Skills** - Interactive skill bars showing proficiency levels
+- 🎒 **What's in My Bag** - Showcase of daily tools and equipment
+- 📧 **Contact** - Functional contact form with validation
+- 📱 **Responsive Design** - Works seamlessly on mobile, tablet, and desktop
+- ✨ **Smooth Animations** - Fade-in, slide-up, and hover effects
+- 🎨 **Modern UI** - Clean design with gradient purple theme
+
+## Tech Stack
+
+- **React 19.2.0** - Modern React with hooks
+- **Vite 7.2.4** - Fast build tool and dev server
+- **React Router DOM** - Multi-page navigation
+- **Pure CSS** - No CSS frameworks, custom styling
+- **ESLint** - Code quality and consistency
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16+ and npm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/VexlsGG/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── components/      # Reusable components (Navbar)
+│   ├── pages/          # Page components
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Achievements.jsx
+│   │   ├── Resume.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Bag.jsx
+│   │   └── Contact.jsx
+│   ├── assets/         # Images and static files
+│   ├── App.jsx         # Main app component with routing
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles
+├── public/             # Public assets
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies and scripts
+```
+
+## Customization
+
+### Colors
+Edit the gradient colors in CSS files to match your brand:
+```css
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+```
+
+### Content
+- Update personal information in each page component
+- Replace placeholder images with your own photos
+- Modify the resume content in `Resume.jsx`
+- Update achievements, skills, and bag items
+
+### Add Your Resume PDF
+To add a real PDF download:
+1. Place your PDF in the `public` folder
+2. Update the `handleDownload` function in `Resume.jsx`
+
+## Deployment
+
+Build the project for production:
+```bash
+npm run build
+```
+
+The optimized files will be in the `dist` folder, ready to deploy to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
+
+## License
+
+This project is open source and available for personal and commercial use.
