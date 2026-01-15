@@ -1,16 +1,113 @@
-# React + Vite
+# Modern Multi-Page React Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, responsive portfolio website built with React, Vite, and React Router. Features smooth animations, modern design, and a clean multi-page architecture.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏠 **Home Page** - Hero section with animated profile and call-to-action
+- 👤 **About Me** - Personal bio with education, experience, and location cards
+- 🏆 **Achievements** - Showcase of accomplishments in a beautiful card layout
+- 📄 **Resume** - Professional resume with download functionality
+- 💼 **Skills** - Interactive skill bars showing proficiency levels
+- 🎒 **What's in My Bag** - Showcase of daily tools and equipment
+- 📧 **Contact** - Functional contact form with validation
+- 📱 **Responsive Design** - Works seamlessly on mobile, tablet, and desktop
+- ✨ **Smooth Animations** - Fade-in, slide-up, and hover effects
+- 🎨 **Modern UI** - Clean design with gradient purple theme
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19.2.0** - Modern React with hooks
+- **Vite 7.2.4** - Fast build tool and dev server
+- **React Router DOM** - Multi-page navigation
+- **Pure CSS** - No CSS frameworks, custom styling
+- **ESLint** - Code quality and consistency
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 16+ and npm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/VexlsGG/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── components/      # Reusable components (Navbar)
+│   ├── pages/          # Page components
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Achievements.jsx
+│   │   ├── Resume.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Bag.jsx
+│   │   └── Contact.jsx
+│   ├── assets/         # Images and static files
+│   ├── App.jsx         # Main app component with routing
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Global styles
+├── public/             # Public assets
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies and scripts
+```
+
+## Customization
+
+### Colors
+Edit the gradient colors in CSS files to match your brand:
+```css
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+```
+
+### Content
+- Update personal information in each page component
+- Replace placeholder images with your own photos
+- Modify the resume content in `Resume.jsx`
+- Update achievements, skills, and bag items
+
+### Add Your Resume PDF
+To add a real PDF download:
+1. Place your PDF in the `public` folder
+2. Update the `handleDownload` function in `Resume.jsx`
+
+## Deployment
+
+Build the project for production:
+```bash
+npm run build
+```
+
+The optimized files will be in the `dist` folder, ready to deploy to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
+
+## License
+
+This project is open source and available for personal and commercial use.
